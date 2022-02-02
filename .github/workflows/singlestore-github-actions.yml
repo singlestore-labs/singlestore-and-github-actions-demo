@@ -14,7 +14,6 @@ jobs:
       # Label used to access the service container
       singlestore:
         image: singlestore/cluster-in-a-box:latest
-        container_name: singlestore
         volumes:
           - /var/lib/memsql
           - ./init.sql:/init.sql
