@@ -1,0 +1,24 @@
+{
+  "name": "singlestore-and-github-actions-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "client.js",
+  "scripts": {
+    "start": "node client.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JoeKarlsson/singlestore-and-github-actions-demo.git"
+  },
+  "keywords": [],
+  "author": "Joe Karlsson <joekarlsson1@gmail.com>",
+  "license": "APACHE-2.0",
+  "bugs": {
+    "url": "https://github.com/JoeKarlsson/singlestore-and-github-actions-demo/issues"
+  },
+  "homepage": "https://github.com/JoeKarlsson/singlestore-and-github-actions-demo#readme",
+  "dependencies": {
+    "mysql2": "^2.3.3"
+  }
+}
