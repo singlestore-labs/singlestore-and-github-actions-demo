@@ -20,10 +20,6 @@ jobs:
         ports:
           - 3306:3306
           - 8080:8080
-        environment:
-          LICENSE_KEY: ${SINGLESTORE_LICENSE}
-          ROOT_PASSWORD: "root"
-          START_AFTER_INIT: "Y"
 
     steps:
       # Downloads a copy of the code in your repository before running CI tests
@@ -42,6 +38,6 @@ jobs:
         # Environment variables used by the `client.js` script to create a new SingleStore table.
         env:
           # The hostname used to communicate with the SingleStore service container
-          POSTGRES_HOST: postgres
-          # The default SingleStore port
-          POSTGRES_PORT: 5432
+          LICENSE_KEY: ${SINGLESTORE_LICENSE}
+          ROOT_PASSWORD: "root"
+          START_AFTER_INIT: "Y"
