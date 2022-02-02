@@ -1,4 +1,3 @@
-import cluster from "cluster";
 import mysql from "mysql2/promise";
 
 // TODO: adjust these connection details to match your SingleStore deployment:
