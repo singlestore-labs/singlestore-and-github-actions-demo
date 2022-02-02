@@ -105,27 +105,15 @@ export default async function singleStorePerformanceTest(numberOfRequests) {
 }
 
 async function main() {
-  if (cluster.isPrimary) {
-    cluster.fork();
-    // cluster.fork();
-    // cluster.fork();
-    // cluster.fork();
-    // cluster.fork();
-    // cluster.fork();
-    // cluster.fork();
-    // cluster.fork();
-    // cluster.fork();
-  } else {
-    try {
-      const numberOfRequests = 100;
-      await singleStorePerformanceTest(numberOfRequests);
-      // console.log("SingleStore performance test complete.");
+  try {
+    const numberOfRequests = 100;
+    await singleStorePerformanceTest(numberOfRequests);
+    // console.log("SingleStore performance test complete.");
 
-      process.exit(1);
-    } catch (err) {
-      console.error("ERROR", err);
-      process.exit(1);
-    }
+    process.exit(1);
+  } catch (err) {
+    console.error("ERROR", err);
+    process.exit(1);
   }
 }
 
