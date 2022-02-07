@@ -110,10 +110,10 @@ async function main() {
     await singleStorePerformanceTest(numberOfRequests);
     console.log("SingleStore performance test complete.");
 
-    process.exit(1);
+    return true;
   } catch (err) {
     console.error("ERROR", err);
-    process.exit(1);
+    throw err;
   }
 }
 
