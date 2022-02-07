@@ -1,10 +1,16 @@
 # Redis Singlestore Performance Test
 
-Here's my SingleStore and Redis performance test workflow:
+This guide shows you workflow examples that configure a service container using the Docker Hub SingleStore image. The workflow runs a script that connects to the SingleStore service, creates a table, and then populates it with data. To test that the workflow creates and populates the SingleStore table, the script prints the data from the table to the console.
 
-* Setup out-of-the-box deployments of each in a docker container for each.
-* Randomly generate a key between [1, 10000] and search for that key in SingleStore database and take note of the time it has taken to do so.
-* Take the time sample to process n number of such requests while increasing n gradually as 1, 10, 100, 1000, 10000, 100000, 1000000, 1000000.
+## Prerequisites
+
+You should be familiar with how service containers work with GitHub Actions and the networking differences between running jobs directly on the runner or in a container. For more information, see "About service containers."
+
+You may also find it helpful to have a basic understanding of YAML, the syntax for GitHub Actions, and PostgreSQL. For more information, see:
+
+    "Learn GitHub Actions"
+    "PostgreSQL tutorial" in the PostgreSQL documentation
+
 
 ## 1. Prepare your environment
 
@@ -58,9 +64,12 @@ setup and ready to go.
    npm start
    ```
 
+   And that is it! Now you can relax and commit your code and migrations as the deployment process is carried out automatically every time you push your code to your repository.
+
 ## Resources
 
-* [Documentation](https://docs.singlestore.com)
+* [SingleStore Documentation](https://docs.singlestore.com)
+* [Learn GitHub Actions](https://docs.github.com/en/actions/learn-github-actions)
 * [Twitter](https://twitter.com/SingleStoreDevs)
 * Reach out to the [SingleStore forums](https://www.singlestore.com/forum).
 
