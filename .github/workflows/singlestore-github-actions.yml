@@ -20,6 +20,10 @@ jobs:
         ports:
           - 3306:3306
           - 8080:8080
+         env:
+          LICENSE_KEY: ${SINGLESTORE_LICENSE}
+          ROOT_PASSWORD: "root"
+          START_AFTER_INIT: "Y"
 
     steps:
       # Downloads a copy of the code in your repository before running CI tests
