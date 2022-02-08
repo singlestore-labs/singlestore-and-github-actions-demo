@@ -1,7 +1,7 @@
 # SingleStore and GitHub Actions Demo - Databases and DevOps
 
  This guide shows you workflow examples that configure SingleStore using GitHub Actions. The workflow runs a script that connects to the SingleStore service, creates a table, and then populates it with data. To test that the workflow creates and populates the SingleStore table, the script prints the data from the table to the console. 
- 
+
 ## 1. Prepare your environment
 
 Before we can start writing code, we need to make sure that your environment is
@@ -19,7 +19,7 @@ setup and ready to go.
 
 3. [Sign up](https://www.singlestore.com/try-free/) for a free SingleStore license. This allows you to run up to 4 nodes up to 32 gigs each for free. Grab your license key from [SingleStore portal](https://portal.singlestore.com/) and set it as an environment variable.
 
-4. Create an encrypted secret for your SINGLESTORE_LICENSE on your GitHub repository.
+4. Create an encrypted secret for your `SINGLESTORE_LICENSE` on your GitHub repository.
 
    In your GitHub repository's GitHub Actions secrets, be sure to add your license.
 
