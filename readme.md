@@ -11,7 +11,6 @@ You may also find it helpful to have a basic understanding of YAML, the syntax f
     "Learn GitHub Actions"
     "PostgreSQL tutorial" in the PostgreSQL documentation
 
-
 ## 1. Prepare your environment
 
 Before we can start writing code, we need to make sure that your environment is
