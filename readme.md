@@ -54,6 +54,6 @@ Don't hesitate to create a pull request. Every contribution is appreciated.
 4. Push to the branch: ````git push origin my-new-feature````
 5. Submit a pull request :D
 
-## LICENSE
+## LICENSE 
 
 ### [Apache 2.0](./LICENSE)
