@@ -1,7 +1,7 @@
 {
   "name": "singlestore-and-github-actions-demo",
   "version": "1.0.0",
-  "description": "",
+  "description": "This guide shows you workflow examples that configure a service container using the Docker Hub SingleStore image. The workflow runs a script that connects to the SingleStore service, creates a table, and then populates it with data. To test that the workflow creates and populates the SingleStore table, the script prints the data from the table to the console.",
   "main": "client.js",
   "type": "module",
   "scripts": {
