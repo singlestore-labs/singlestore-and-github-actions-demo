@@ -1,8 +1,0 @@
-{
-  "files.associations": {
-    "*.yaml": "home-assistant"
-  },
-  "vscode-home-assistant.hostUrl": "ws://homeassistant.local:8123/",
-  "vscode-home-assistant.longLivedAccessToken": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc",
-  "vscode-home-assistant.ignoreCertificates": true
-}
